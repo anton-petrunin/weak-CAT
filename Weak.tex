@@ -488,17 +488,17 @@ Assuming the contrary and replacing the sequence by a subsequence we may assume 
 Set $\delta\mathrel{:=} d(z,x)$.
 Choosing yet another subsequence we may assume that $s_{\alpha_i}\mathrel{:=} d(x_{\alpha_i} , z)$ converge to some $s \geq 0$, for $i\to \infty$. 
 
-We set $\epsilon \leq \frac {\delta ^2} {10}$ and find some $i_0$ such that 
-$(1- 2^{-i_0-1})^2 > 1 -\epsilon$ and such that, for all $i \geq i_0$,
+We set $\varepsilon \leq \frac {\delta ^2} {10}$ and find some $i_0$ such that 
+$(1- 2^{-i_0-1})^2 > 1 -\varepsilon$ and such that, for all $i \geq i_0$,
 % we have the three estimates 
-$$|r_{\alpha_i} ^2 -1| <\epsilon \; ; \; |s_{\alpha_i} ^2-s^2| <\epsilon . $$
+$$|r_{\alpha_i} ^2 -1| <\varepsilon \; ; \; |s_{\alpha_i} ^2-s^2| <\varepsilon . $$
 Using the weak convergence of $(x_{\alpha_i})$ to $z$ and $\CAT(0)$ comparison, we may assume in addition, that for all $i\geq i_0$ 
-$$d^2(x_{\alpha _i}, x) -d^2(x_{\alpha_i} ,z) ^2 \geq	\delta ^2 -\epsilon = 9 \epsilon .$$
+$$d^2(x_{\alpha _i}, x) -d^2(x_{\alpha_i} ,z) ^2 \geq	\delta ^2 -\varepsilon = 9 \varepsilon .$$
 %The last estimate follows, once the projection of $x_{\alpha_i}$ onto $[x,z]$ is sufficiently close to $z$. 
 
 For $j=1,2...$ we consider the point $p_j\mathrel{:=} x_{\alpha _{i_0+ j}}$. By above, the circumradius $t$
 of the countable set $\{p_j\}$ satisfies 
-$$t^2 < 1 -\tfrac 1 2 \delta ^2 = 1-5\epsilon \,.$$ 
+$$t^2 < 1 -\tfrac 1 2 \delta ^2 = 1-5\varepsilon \,.$$ 
 Denote by $0\leq t_k \leq t$ the circumradius of the set $\{p_1,...,p_k\}$.
 We claim that there exists some positive $\rho >0$, such that $t^2_{k+1}-t^2_k >\rho$ for all $k\geq 1$. Since the sequence $(t_k)$ is bounded above by $t$, this would provide a contradiction and finish the proof.
 
@@ -511,9 +511,9 @@ On the other hand, $f(m_{k+1}) \leq t^2_{k+1}$, hence
 $$t_{k+1} ^2 \geq t_k ^2 + d^2 (m_k,m_{k+1}).$$ 
 
 By construction of the sequence $x_{\alpha_i}$, we have 
-$$d^2(p_{k+1}, m_k) \geq (1- 2^{-i_0-1})^2 > 1 -\epsilon .$$
+$$d^2(p_{k+1}, m_k) \geq (1- 2^{-i_0-1})^2 > 1 -\varepsilon .$$
 Thus, by the triangle inequality and the fact 
-$$d^2 (p_{k+1} , m_{k+1}) \leq t_{k+1} ^2 \leq t^2 \leq 1-5\epsilon \,$$
+$$d^2 (p_{k+1} , m_{k+1}) \leq t_{k+1} ^2 \leq t^2 \leq 1-5\varepsilon \,$$
 we obtain some positive lower bound $\rho>0$ on $d^2(m_k,m_{k+1})$. 
 This finishes the proof of the claim and of the proposition. 
 \end{proof}
