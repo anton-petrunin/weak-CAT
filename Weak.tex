@@ -157,7 +157,7 @@ This note aims to close some of these gaps.
 A bounded sequence $(x_n)$ in a $\CAT(0)$ space $X$ \emph{converges weakly} to a point $x$ if for any compact geodesic $c$ starting at $x$, the closest-point projections $Proj _c (x_n)$ of $x_n$ to $c$ converge to $x$. 
 \end{defn}
 
-This notion of convergence (also known as $\Delta$-convergence), introduced in \cite{Jost}, generalizes weak convergence in Hilbert spaces. It can be defined in many other natural ways and is suitable for questions concerning the existence of fixed points and gradient flows, see \cite{Bac}. This weak convergence generalizes verbatim to convergence of nets and satisfies natural compactness and separation properties.
+This notion of convergence (also known as $\Delta$-convergence), introduced in \cite{Jost}, generalizes weak convergence in Hilbert spaces. It can be defined in many other natural ways and is suitable for questions concerning the existence of fixed points and gradient flows, see \cite{Bac}. The weak convergence generalizes verbatim to convergence of nets and satisfies natural compactness and separation properties.
 
 We begin by resolving the question asked by William Kirk and Bancha Panyanak in \cite[Question 1]{Kirk} and discussed, for instance, in \cite{Bac4,Bac,Kell,Obs}.
 The question concerns the existence of a weak topology inducing the weak convergence.
@@ -212,7 +212,7 @@ Whenever $\mathcal T_{co}$ is Hausdorff on bounded subsets, the topologies $\mat
 
 Whenever the $\CAT(0)$ space $X$ is locally compact, the metric topology $\mathcal T_{metric}$ coincides with $\mathcal T_{\Delta}$.
 On the other hand, for smooth 3-dimensional Riemannian $\CAT(-1)$ manifolds or symmetric spaces of higher rank, the coconvex topology $\mathcal T_{co}$ can be non-Hausdorff and not first countable, as we will observe in Section \ref{sec: conv}.
-The failure of the Hausdorff property for symmetric spaces has been expected in \cite{Monod}, a first rigorously confirmed failure
+The failure of the Hausdorff property for symmetric spaces has been expected in \cite{Monod},  a first explicitly  confirmed failure
 of the Hausdorff property for some $\CAT(0)$ space seems to be the example of the Euclidean cone over a Hilbert space provided by Martin Kell in \cite{Kell}.
 
 On the other hand,
@@ -266,7 +266,7 @@ In the final Section \ref{sec: conv}, we discuss the relations with the coconvex
 
 \subsection*{Acknowledgments}
 We would like to thank Tamas Darvas for explaining to us the problem of the existence of the weak topology on 
-$\CAT(0)$ spaces.
+$\CAT(0)$ spaces and to Nicolas Monod for his interest and helpful exchange about convex subsets of $\CAT (0)$ spaces. 
 Alexander Lytchak was partially supported by the DFG grant SPP 2026.
 Anton Petrunin was partially supported by NSF grant DMS-2005279.
 
@@ -656,26 +656,47 @@ Lemma \ref{lem: anc} above and \cite[Theorem B, Corollary C]{Ancona}:
 There exists a smooth $3$-dimensional $\CAT(-1)$ Riemannian manifold $X$, for which the coconvex topology $\mathcal T_{co}$ is not Hausdorff and not first-countable.
 \end{ex}
 
-In the final example, we will use some facts about geometry of spherical buildings arising as the boundary at infinity of symmetric space with their corresponding Tits-metric, see for instance \cite{KleinerLeeb}. The following result is also valid for spaces of rank larger than two but the proof requires some additional considerations:
+In the final example, we  use some facts about geometry of spherical buildings arising as the boundary at infinity of symmetric space with their corresponding \emph{Tits-metric}, see  \cite{KleinerLeeb}, \cite{KleinerLeeb1}, \cite{Kap}.  The following result might be known to specialists, accordingly to Nicolas Monod it was known to Bruce Kleiner many years ago. 
+%also valid for spaces of rank larger than two but the proof requires some additional considerations:
 
 \begin{prop}
-Let $X$ be an irreducible, non-positively curved symmetric space of rank 2. Then $X$ satisfies the assumptions, and, therefore, the conclusions of Lemma \ref{lem: anc}. 
+Let $X$ be an irreducible, non-positively curved symmetric space of rank at least two. Then $X$ satisfies the assumptions, and, therefore, the conclusions of Lemma \ref{lem: anc}. 
 \end{prop}
 
 
 \begin{proof}
-Assume the contrary and consider any closed convex subset $A$ of $X$ such that the boundary at infinity $A^{\infty}$ has non-empty interior in the $(n-1)$ dimensional sphere 
-$X^{\infty}$; here $n$ is the dimension of $X$. 
+Assume the contrary and consider any closed convex subset $A$ of $X$ such that the boundary at infinity $A^{\infty}$  of $A$ has non-empty interior in the $(n-1)$-dimensional sphere 
+$X^{\infty}$; here $n$ is the dimension of $X$.
+
+
+
+ 
 %with respect to the cone topology. The boundary at infinity $X^{\infty}$ is a
 Thus, in the cone topology, $A^{\infty}$ has dimension $n-1$. Therefore, there are no totally geodesic symmetric spaces $Y \subsetneq X$ 
-with $A^{\infty} \subset Y^{\infty}$. 
+with $A^{\infty} \subset Y^{\infty}$.  On the other hand, if $A^{\infty} =X^{\infty}$ then $A=X$. 
+Thus, we may assume $A^{\infty} \neq X^{\infty}$.  Applying \cite[Theorem 3.1]{KleinerLeeb}, we deduce that $A^{\infty}$ is not a \emph{sub-building} of the \emph{spherical building} $X^{\infty}$.
 
-The set $A^{\infty}$ is closed in the cone topology and convex with respect to the Tits-metric of the $1$-dimensional spherical building $X^{\infty}$. By the openness assumption, $ A^{\infty}$ contains a regular point of the building $X^{\infty}$. Moreover, it contains an open neighborhood of this point in the Tits-metric, thus $A^{\infty}$ is not discrete. Hence, in the Tits-metric, the space $A^{\infty}$ has dimension $1$.
+Since $A^{\infty}$  contains an open subset in the cone topology, we find a non-empty subset $O$ of $A^{\infty}$, open in the cone topology and consisting of \emph{regular} points only.  If, for some 
+$p\in O$, we find an antipode $q\in A^{\infty}$ (with respect to the \emph{Tits-distance}) then $A^{\infty}$  contains a spherical apartment  (the boundary of a maximal flat in $X$), as the convex hull in the Tits-metric of $q$ and a Tits-ball around $p$. By \cite[Theorem 1.1]{BL}, this would imply that $A^{\infty}$ is a sub-building,
+ in contradiction to the statements above.   
+Thus,  for no  $p\in O$ and $q\in A^{\infty}$ the Tits-distance between 
+$p$ and $q$ equals $\pi$.
 
-If $A^{\infty}$ contains a circle of length $2\pi$, then 
-$A^{\infty}$ is a sub-building of $X^{\infty}$ by \cite[Theorem 1.1]{BL}. Applying \cite[Theorem 3.1]{KleinerLeeb} we would deduce $A ^{\infty}= X^{\infty}$ and therefore $A=X$.
+  We are going to construct a pair of antipodes $p\in O$ and $q\in A^{\infty}$ and achieve a contradiction.  We start with an arbitrary point $p\in O$.  
 
-Assume now that $A^{\infty}$ does not contain a circle of length $2\pi$ hence it not a sub-building of $A^{\infty}$. Then, by \cite[Theorem 1.1]{BL} the space $A^{\infty}$ is a tree with respect to its Tits metric. Then this space has a unique center $m$ and $A^{\infty}$ is contained in the $\frac \pi 2$-ball in $A^{\infty}$ around $m$. The contradiction is achieved by observing that no such ball contains an open set with respect to the cone topology.
+
+Let $G$ be the isometry group of $X$ (and of  $X^{\infty}$) and denote 
+ by $\Delta$ the spherical Coxeter chamber $X^{\infty} /G$  of the spherical building $X^{\infty}$.
+ Let $\mathcal P:X^{\infty} \to \Delta$ be the canonical projection.  Denote by $I:\Delta \to \Delta$ the isometry of the Coxeter chamber induced by the action of $-Id$ on any apartment of $X^{\infty}$.   The map $I$ is an involution, which is the identity map if and only if the Coxeter group $W$ of $X^{\infty}$  has a non-trivial center (note, that this is the case for all Weyl groups, which are not of type $A_m$, $E_6$ or $D_{2m+1}$, see \cite[p.71]{Hum}).
+
+Consider the orbit $L:=G\cdot p= \mathcal P^{-1} (\mathcal P (p)) \subset X^{\infty}$. Any element $p'\in L$ is contained in a unique Coxeter chamber $\Delta _{p'}$.  Consider the set $L^{op} _p$   of all elements $p'$ in $L$  which are 
+in an \emph{opposite} Coxeter to $p$, thus such that the Coxeter chamber  $\Delta _{p'}$ through $p'$ contains an antipode of $p$.  Then $L^{op} _p$ is open and dense in the manifold $G\cdot p$, see, for instance, \cite{Kap}.   Thus, we find an element  $p'\in O\cap L^{op} _p$.
+
+If the isometry $I:\Delta \to \Delta$ is the identity (see the discussion above), then $p'$ is an antipode of $p$ and we are done.  If $I$ is not the identity, then looking at an apartment through $p$ and $p'$ we deduce that the Tits-geodesic between $p$ and $p'$ contains a point $q$ which is projected by $\mathcal P$ onto $I(p)$.  Then  $L$ contains all antipodes of $q$. By convexity, $q\in A^{\infty}$. As above, the set 
+ $L^{op} _q \cap O$ of elements in $O$  contained in a chamber opposite to $q$ is not empty.
+ For any such element $p'\in L^{op} _q\cap O$, the distance between $q$ and $p'$ is $\pi$.
+ 
+ Thus, in both cases we have found a pair of antipodes $p\in O$ and $q\in A^{\infty}$, finishing the proof. 
 \end{proof}
 
 %\begin{lem}
