@@ -149,7 +149,7 @@
 	\maketitle
 
 \section{Introduction}
-Weak convergence and coarse topologies in $\CAT(0)$ spaces have appeared in relation to very different problems and settings in the last years, see \cite{Jost,Monod,Kirk,Bac3,Kell,Streets,Darvas} and the survey \cite{Bac} for an overview.
+Weak convergence and coarse topologies in $\CAT(0)$ spaces have appeared in relation to very different problems and settings in the last years, see \cite{Jost,Monod,Kirk,Bac3,Kell,Streets,Darvas, Gigli} and the survey \cite{Bac} for an overview.
 On the other hand, some related fundamental questions have remained open.
 This note aims to close some of these gaps. 
 
@@ -179,7 +179,7 @@ Recall, that a topology $\mathcal T$ is called \emph{sequential} if a subset is 
 
 This topology $\mathcal T_{\Delta}$, which we want to call the \emph{weak topology}, has the following additional properties;
 see Proposition \ref{prop: delta}, Corollary \ref{prop: comp}: 
-$\mathcal T _{\Delta}$ is sequentially Hausdorff; any metrically closed and convex subset of $X$ is $\mathcal T_{\Delta}$-closed, 
+$\mathcal T _{\Delta}$ is sequentially Hausdorff; any metrically closed, bounded,  convex subset of $X$ is $\mathcal T_{\Delta}$-closed, 
 	$\mathcal T_{\Delta}$-sequentially compact and $\mathcal T_{\Delta}$-compact. However,
 
 \begin{prop} \label{prop: haus}
@@ -187,7 +187,7 @@ There exists a bounded, separable, two-dimensional $\CAT(0)$ simplicial complex 
 such that $\mathcal T_{\Delta}$ is not Hausdorff.
 \end{prop} 
 
-Together with Proposition \ref{prop: haus}, the next theorem implies that, in general, there is no topology on a $\CAT(0)$ space, which induces the weak convergence of \emph{nets}:
+Together with Proposition \ref{prop: haus}, the next theorem implies that, in general, there is no topology on a $\CAT(0)$ space which induces the weak convergence of \emph{nets}:
 
 \begin{thm} \label{thm2}
 Let $X$ be a $\CAT(0)$ space and let $\mathcal T_{\Delta}$ be the weak topology 	defined in Theorem \ref{thm1}. 
@@ -203,7 +203,7 @@ For a topology $\mathcal T$ on $X$ the following two conditions are equivalent:
 \end{thm}
 
 We discuss $\mathcal T_{\Delta}$ in some examples and relate this topology to another coarse topology,
-the \emph{coconvex} topology introduced by Nicolas Monod in \cite{Monod}. This coconvex topology $\mathcal T_{co}$ on a $\CAT(0)$ space $X$ is defined as the coarsest topology $\mathcal T$ on $X$, for which all metrically closed, convex subsets are $\mathcal T$-closed. 
+the \emph{coconvex} topology introduced by Nicolas Monod in \cite{Monod}. This coconvex topology $\mathcal T_{co}$ on a $\CAT(0)$ space $X$ is defined as the coarsest topology $\mathcal T$ on $X$ for which all metrically closed, convex subsets are $\mathcal T$-closed. 
 
 Every metrically closed, bounded convex subset of $X$ is $\mathcal T_{co}$-compact and $\mathcal T_{co}$-sequentially compact, see Section \ref{sec: conv}.
 The weak topology $\mathcal T_{\Delta}$ is finer than the coconvex topology $\mathcal T_{co}$ (Proposition \ref{prop: delta}); these topologies can be different even for bounded $\CAT(0)$ spaces $X$ (Lemma \ref{lem: differ}).
@@ -266,7 +266,7 @@ In the final Section \ref{sec: conv}, we discuss the relations with the coconvex
 
 \subsection*{Acknowledgments}
 We would like to thank Tamas Darvas for explaining to us the problem of the existence of the weak topology on 
-$\CAT(0)$ spaces and to Nicolas Monod for his interest and helpful exchange about convex subsets of $\CAT (0)$ spaces. 
+$\CAT(0)$ spaces, to Nicolas Monod for his interest and helpful exchange about convex subsets of $\CAT (0)$ spaces and to Miroslav Bacak for helpful comments on a preliminary version of the paper. 
 Alexander Lytchak was partially supported by the DFG grant SPP 2026.
 Anton Petrunin was partially supported by NSF grant DMS-2005279.
 
@@ -281,7 +281,7 @@ By $B_r(x)$ we denote the closed ball of radius $r$ around the point $x$.
 
 Any bounded subset $A$ in a $\CAT(0)$ space $X$ has a unique circumcenter $x\in X$ such that 
 for some $r=r(A)\in \R$, the \emph{circumradius} of $A$, we have $A\subset B_r(x)$ but $A\not\subset B_r(y)$,
-for any other point $y\neq x$, \cite{BH}.
+for any other point $y\neq x$ \cite{BH}.
 
 \subsection{General topology}
 We refer to \cite{Engel} for a detailed explanation of the notions below.
@@ -358,11 +358,11 @@ of the definition and the corresponding properties of weak convergence:
 The weak topology $\mathcal T_{\Delta}$ on a $\CAT(0)$ space $X$ 
 is finer than the coconvex topology and coarser than the metric topology:
 $$\mathcal T_{co} \subset \mathcal T_{\Delta}\subset \mathcal T_{metric} .$$
-The topology $\mathcal T_{\Delta}$ is sequentially Hausdorff. Any metrically closed, convex subset $C\subset X$ 
+The topology $\mathcal T_{\Delta}$ is sequentially Hausdorff. Any metrically closed, bounded, convex subset $C\subset X$ 
 is $\mathcal T_{\Delta}$-sequentially compact.
 \end{prop}
 
-The less trivial statement that any closed, bounded convex subset is $\mathcal T_{\Delta}$-compact will be derived later in Proposition \ref{prop: comp}. 
+The less trivial statement that any closed, bounded, convex subset is $\mathcal T_{\Delta}$-compact will be derived later in Corollary \ref{prop: comp}. 
 
 We finish the section with two simple examples. The first example is a direct consequence of the definition and the theorem of Hopf--Rinow:
 
@@ -440,7 +440,7 @@ The provided example implies that $\mathcal T_{co}$ and $\mathcal T_{\Delta}$ ma
 \end{lem}
 
 \begin{proof}
-Consider set 
+Consider the set 
 $$A=E\cup \tfrac 1 {\sqrt 2} \cdot B \cup \{\tfrac 1 2 \cdot p\} \cup \{o\}$$ which has appeared above.
 As explained in the proof of Proposition \ref{prop: haus} above, the set $A$ is $\mathcal T_{\Delta}$-closed.
 
@@ -506,7 +506,7 @@ In order to prove the claim, consider the circumcenter $m_k$ of the subset $p_1,
 Thus, $m_k$ is the point at which the $2$-convex function, 
 $$f(y)\mathrel{:=} \max_{1\leq i \leq k} d^2 (y,p_i)$$ 
 assumes its unique minimum $t_k ^2$. By the $2$-convexity, we deduce
-$$f(m_{k_+1}) \geq t_k ^2 + d^2 (m_k,m_{k+1}).$$
+$$f(m_{k+1}) \geq t_k ^2 + d^2 (m_k,m_{k+1}).$$
 On the other hand, $f(m_{k+1}) \leq t^2_{k+1}$, hence 
 $$t_{k+1} ^2 \geq t_k ^2 + d^2 (m_k,m_{k+1}).$$ 
 
@@ -573,7 +573,7 @@ This happens if $B_r(x)$ is $\mathcal T_{co}$-Hausdorff.
 \begin{proof}
 We may replace $X$ by a ball $B_r(x)$ and assume that $X$ is bounded. The only if statement follows from Proposition \ref{prop: delta}. 
 
-On the other hand, assume that $\mathcal T_{\Delta}$ is sequential and sequentially Hausdorff on the bounded $\CAT(0)$ space $X$. Due to Proposition \ref{prop: delta}, the identity map
+On the other hand, assume that $\mathcal T_{co}$ is sequential and sequentially Hausdorff on the bounded $\CAT(0)$ space $X$. Due to Proposition \ref{prop: delta}, the identity map
 $Id\colon (X, \mathcal T_{\Delta}) \to (X, \mathcal T_{co} )$ is continuous. 
 In order to prove that the inverse $Id\colon(X, \mathcal T_{co}) \to (X, \mathcal T_{\Delta})$ is continuous, consider a $\mathcal T_{\Delta}$-closed subset $A$ and assume that 
 $A$ is not $\mathcal T_{co}$-closed. Since $\mathcal T_{co}$ is sequential, we find a sequence $(x_n)$ in $A$ which $\mathcal T_{co}$-converges to a point $x \in X\setminus A$. Using that $X$ is $\mathcal T_{\Delta}$-sequentially compact, we may replace $(x_n)$ by a subsequence and assume that $(x_n)$ converges to some point $y$ in $X$ with respect to $\mathcal T_{\Delta}$.
@@ -599,10 +599,10 @@ Then each geodesic $\gamma \colon[a,b]\to X$ extends to a geodesic $\hat \gamma 
 Moreover, by Jordan's theorem, $\hat \gamma$ divides $X$ into two connected components both having $\hat \gamma$ as their boundaries. The closures of the connected components are convex.
 Thus, the open components are $\mathcal T_{co}$ open.
 	
-In order to prove that $\mathcal T_{co}$ is Hausdorff it suffices to find, for any pair of points $x,y$ a geodesic $\gamma \colon\R \to X$, such that $x$ and $y$ are in different components of $X\setminus \gamma$.
+In order to prove that $\mathcal T_{co}$ is Hausdorff it suffices to find, for any pair of points $x,y$, some geodesic $\gamma \colon\R \to X$, such that $x$ and $y$ are in different components of $X\setminus \gamma$.
 We connect $x$ and $y$ by a geodesic $\eta$ and take the midpoint $m$ of $\eta$.
 We find two points $p^{\pm}$ sufficiently close to $m$ which lie in different components of $X\setminus \hat \eta$ for some extension of $\eta$ to an infinite geodesic.
-Then consider a geodesic $\gamma\colon\R \to \infty$ which contains $p^+$ and $p^-$.
+Then consider a geodesic $\gamma\colon\R \to X$ which contains $p^+$ and $p^-$.
 The geodesic $\gamma$ intersect $\eta$ between $x$ and $y$.
 We infer that $x$ and $y$ lie in different components of $X\setminus \gamma$.
 This finishes the proof if $X$ is homeomorphic to a plane.
@@ -653,7 +653,7 @@ The first example directly follows from
 Lemma \ref{lem: anc} above and \cite[Theorem B, Corollary C]{Ancona}:
 
 \begin{ex} \label{ex: anc}
-There exists a smooth $3$-dimensional $\CAT(-1)$ Riemannian manifold $X$, for which the coconvex topology $\mathcal T_{co}$ is not Hausdorff and not first-countable.
+There exists a smooth $3$-dimensional $\CAT(-1)$ Riemannian manifold $X$ for which the coconvex topology $\mathcal T_{co}$ is not Hausdorff and not first-countable.
 \end{ex}
 
 In the final example, we  use some facts about geometry of spherical buildings arising as the boundary at infinity of symmetric space with their corresponding \emph{Tits-metric}, see  \cite{KleinerLeeb}, \cite{KleinerLeeb1}, \cite{Kap}.  The following result might be known to specialists, accordingly to Nicolas Monod it was known to Bruce Kleiner many years ago. 
