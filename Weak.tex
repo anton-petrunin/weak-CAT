@@ -3,7 +3,31 @@
 \usepackage{epsfig,lpic,wrapfig}
 \usepackage{amssymb,hyperref}
 \usepackage{color,comment}
-\newenvironment{bew}{\begin{proof}[Beweis]}{\end{proof}}
+
+\usepackage[
+%sorting=debug,
+bibencoding=auto,
+backend=biber,
+maxnames=10,
+%babel=other,
+%autolang=other,
+doi=false,
+url=false,
+style=numeric-comp,
+isbn=false]{biblatex}
+\usepackage{csquotes}
+
+\AtBeginDocument{%removes the last "and" in author field
+    \renewcommand*{\finalnamedelim}{,\space}
+}
+
+
+\AtEveryBibitem{\clearlist{language}}
+\AtEveryBibitem{\clearlist{note}}
+\renewbibmacro{in:}{}
+\renewcommand*{\bibfont}{\footnotesize}
+
+\addbibresource{Projection.bib}
 
 \numberwithin{equation}{section}
 
@@ -266,7 +290,7 @@ In the final Section \ref{sec: conv}, we discuss the relations with the coconvex
 
 \subsection*{Acknowledgments}
 We would like to thank Tamas Darvas for explaining to us the problem of the existence of the weak topology on 
-$\CAT(0)$ spaces, to Nicolas Monod for his interest and helpful exchange about convex subsets of $\CAT (0)$ spaces and to Miroslav Bacak for helpful comments on a preliminary version of the paper. 
+$\CAT(0)$ spaces, to Nicolas Monod for his interest and helpful exchange about convex subsets of $\CAT (0)$ spaces and to Miroslav Bačák for helpful comments on a preliminary version of the paper. 
 Alexander Lytchak was partially supported by the DFG grant SPP 2026.
 Anton Petrunin was partially supported by NSF grant DMS-2005279.
 
@@ -712,8 +736,16 @@ If the isometry $I:\Delta \to \Delta$ is the identity (see the discussion above)
 
 	
 
-\bibliographystyle{alpha}
-\bibliography{Projection}
+
+{
+
+\sloppy
+
+\printbibliography[heading=bibintoc]
+
+\fussy
+
+}
 
 \end{document}	
 
