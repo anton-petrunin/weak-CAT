@@ -3,31 +3,7 @@
 \usepackage{epsfig,lpic,wrapfig}
 \usepackage{amssymb,hyperref}
 \usepackage{color,comment}
-
-\usepackage[
-%sorting=debug,
-bibencoding=auto,
-backend=biber,
-maxnames=10,
-%babel=other,
-%autolang=other,
-doi=false,
-url=false,
-style=numeric-comp,
-isbn=false]{biblatex}
-\usepackage{csquotes}
-
-\AtBeginDocument{%removes the last "and" in author field
-    \renewcommand*{\finalnamedelim}{,\space}
-}
-
-
-\AtEveryBibitem{\clearlist{language}}
-\AtEveryBibitem{\clearlist{note}}
-\renewbibmacro{in:}{}
-\renewcommand*{\bibfont}{\footnotesize}
-
-\addbibresource{Projection.bib}
+\newenvironment{bew}{\begin{proof}[Beweis]}{\end{proof}}
 
 \numberwithin{equation}{section}
 
@@ -736,16 +712,8 @@ If the isometry $I:\Delta \to \Delta$ is the identity (see the discussion above)
 
 	
 
-
-{
-
-\sloppy
-
-\printbibliography[heading=bibintoc]
-
-\fussy
-
-}
+\bibliographystyle{alpha}
+\bibliography{Projection}
 
 \end{document}	
 

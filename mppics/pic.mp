@@ -67,7 +67,7 @@ dOt z.a;
 
 
 
-label(btex $\dots$ etex rotated 260, (1.2*z.b) rotated 260);
+label(btex $\dots$ etex rotated 255, z.b rotated 255);
 label.urt(btex $p$ etex, z.a);
 label.ulft(btex $B$ etex, .95*z.b rotated 50);
 label.ulft(btex $E$ etex, 1.9*z.b rotated 50);
